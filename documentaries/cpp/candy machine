@@ -1,0 +1,45 @@
+#pragma hdrstop
+#pragma argsused
+
+#ifdef _WIN32
+#include <tchar.h>
+#else
+  typedef char _TCHAR;
+  #define _tmain main
+#endif
+
+#include <stdio.h>
+#include <iostream.h>
+#include <string>
+
+void choose() {
+	std::cout << "for jellybeans type in 1" << "\n";
+	std::cout << "for warme chocolademelk met slagroom type in 2" << "\n";
+	std::cout << "for skittels type in 3" << "\n";
+	std::cout << "for dood dier op stokkie met saus type in 4" << "\n";
+	std::cout << "for wasbeer type in 5" << "\n";
+	std::cout << "for gevulde koekie type in 6" << "\n";
+	std::cout << "for een halve kitkat type in 7" << "\n";
+	std::cout << "for een viz type in 8";
+
+	getchar();
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(24, '-');
+	std::cout << "Welkom By The Best Candymachine Ever!";
+	std::cout << std::string(24, '-') << "\n";
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(85, '-') << "\n";
+	std::cout << std::string(2, '\n');
+	std::cout << "Press C to continue";
+
+	getchar();
+
+	return 0;
+}
